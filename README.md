@@ -1,50 +1,62 @@
-# 👋 Hi, I'm Alex Hernandez Juarez
+# 🧠 ASL Translator – Real-Time Sign Language to Text
 
-🎓 CS & Math @ Yale (First-Gen, Class of 2028)  
-💡 Passionate about accessibility, AI, and inclusive technology  
-🤖 Building gesture-based interfaces and educational tools  
-📍 Salt Lake City · Fluent in English, Spanish, and Chinese  
+A machine learning-powered interface that translates **Mexican Sign Language (LSM)** gestures into real-time text, developed to support online education for the Deaf community.
 
----
-
-## 💼 About Me
-
-I'm a student developer focused on using technology to make communication more inclusive. Through my work at **GestureGraphix**, I’ve led projects in AI-powered sign language translation and human-computer interaction. I also contribute to student-driven tech at Yale through the Yale Computer Society.
+Built in partnership with **AProSEL**, a Mexican online school for the Deaf.
 
 ---
 
-## 🛠 Tech Stack
+## 📌 Overview
 
-- **Languages:** Python · Java · C · C++ · JavaScript · Racket  
-- **Core Areas:** Machine Learning · Algorithm Design · Accessibility Tech  
-- **Tools:** Git · React · OpenCV · Flask · Figma · Cloud Platforms
+This project enables accurate and real-time translation of over **500 LSM gestures** using a **vector-based keypoint ML pipeline**. It aims to bridge communication gaps and expand accessibility in educational contexts.
 
----
-
-## 🚀 Featured Projects
-
-### 🔤 [ASL Translator](https://github.com/GestureGraphix/asl-translator)  
-Translates 500+ signs in Mexican Sign Language (LSM) using a keypoint-based ML pipeline  
-Built in partnership with AProSEL, a Mexican school for the deaf
-
-### 🖌️ Movement-Based Sketcher  
-A creative simulator that turns vector hand movements into dynamic digital sketches  
-Explores gesture-to-visual interaction using real-time inputs
+- 🧠 96% average recognition accuracy  
+- 🎯 Real-time inference using webcam input  
+- 🌍 Supports educational use cases in Spanish-speaking communities  
 
 ---
 
-## 🏆 Highlights
+## 🛠 Technologies Used
 
-- 🏅 Sigma Xi Special Award – ISEF 1st Place, Physical Sciences  
-- 🌍 National STEM Champion – Featured by National Inventors Hall of Fame  
-- 🇺🇸 USAID Science Champion – For work in global accessibility  
-- ✉️ Letter of Recognition from President Barack Obama  
+- **Python**  
+- **OpenCV** – For hand/gesture capture  
+- **TensorFlow / PyTorch** – For training and inference  
+- **MediaPipe / Custom keypoint detection**  
+- **Flask (optional)** – For web demo integration  
 
 ---
 
-## 📫 Connect With Me
+## 🚀 How It Works
 
-- 📧 alex.hernandezjuarez@yale.edu  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/alex-hernandez-juarez-a2231b239/)  
-- 🌐 [Website](https://gesturegraphix.github.io) *(coming soon)*  
+1. Capture video feed through webcam  
+2. Detect and extract hand keypoints  
+3. Feed keypoints into a trained classification model  
+4. Output recognized LSM gesture as text in real time
+
+---
+
+## 📷 Demo (Coming Soon)
+
+We'll include a GIF or video demo here showcasing live translation.
+
+> Want to contribute? Check the [issues](https://github.com/GestureGraphix/asl-translator/issues) tab!
+
+---
+
+## 🧑‍🤝‍🧑 Real-World Impact
+
+This project was created in collaboration with **AProSEL**, a nonprofit Mexican school for the Deaf. It supports their mission to teach **Mexican Sign Language (LSM)** to students online — expanding access to language, education, and opportunity.
+
+---
+
+## 📂 Folder Structure
+
+```bash
+asl-translator/
+├── data/                # Keypoint data and labels
+├── model/               # Trained model and training scripts
+├── webcam_demo.py       # Real-time translation script
+├── preprocess.py        # Feature extraction pipeline
+├── utils/               # Helper functions
+└── README.md            # Project documentation
 
